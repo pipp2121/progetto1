@@ -15,6 +15,12 @@
                 display: flex;
                 justify-content: center;
                 padding-top: 50px;
+                /*comandi per l'immagine di sfondo*/
+                background-image: url("sfondo_prima_pag.jpg");
+                /*evita che l'immagine si ripeta nello sfondo*/
+                background-repeat: no-repeat;
+                /*adatta l'immagine alla dimensione dello schermo*/
+                background-size: cover;
             }
             hr{
                 border: 10;
@@ -31,6 +37,13 @@
                 width: 100%;
                 box-sizing: border-box;
             }
+            th,td{
+                border: 2px solid #000000;
+                border-radius: 10px;
+            }
+            .prima_classe{
+                background-color: #7f7fa3;
+            }
         </style>
     </head>
     <body>
@@ -41,13 +54,22 @@
                 <!-- in questa sezione devo poter andare a cliccare sulle parole e accedere alle seguenti pagine-->
                 <thead>
                     <tr>
-                        <th>chi siamo?</th>
-                        <th>ultimi risultati</th>
-                        <th>calendario completo stagione 2026</th>
-                        <th>catalogo merchandising</th>
-                        <th>contatti e sponsor</th>
+                        <th><a href="chi_siamo.html">chi siamo?</a></th>
+                        <th><a href="ultimi_ris.html">ultimi risultati</a></th>
+                        <th><a href="stagione_2026.html">calendario completo stagione 2026</a></th>
+                        <th><a href="prodotti.html">catalogo merchandising</a></th>
+                        <th><a href="contatti_sposnor.html">contatti e sponsor</a></th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr class="prima_classe">
+                        <th>scopri chi siamo e come lavoriamo</th>
+                        <th>scopri gli ultimi risultati della stagione 2026</th>
+                        <th>gurda il calendario della stagione 2026</th>
+                        <th>guarda i nostri prodotti</th>
+                        <th>apri questa pagina per maggiori informazioni</th>
+                    </tr>
+                </tbody>
             </table>
             
         </div>
